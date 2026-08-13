@@ -72,12 +72,12 @@
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.18.5",
-    "@eslint/js": "^9.39.1",
-    "@types/node": "^24.10.1",
-    "eslint": "^9.39.1",
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.2.0",
+    "eslint": "^10.8.1",
     "publint": "^0.3.23",
     "tsx": "^4.20.6",
-    "typescript": "^5.9.3",
+    "typescript": "^7.0.2",
     "typescript-eslint": "^8.46.4"
   },
   "publishConfig": {
