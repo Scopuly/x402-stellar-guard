@@ -1,0 +1,29 @@
+name: Feature request
+description: Propose a focused improvement to the guard, policy, or conformance tooling.
+title: "[proposal]: "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: Protocol, security-policy, public-API, and persisted-data changes require a clear threat model. Never include secrets or production payment data.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What developer or wallet-safety problem should be solved?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe the smallest public behavior or API change that would solve it.
+    validations:
+      required: true
+  - type: textarea
+    id: security
+    attributes:
+      label: Security and compatibility impact
+      description: Which trust boundaries, networks, assets, limits, signing paths, storage formats, or protocol baselines would change?
+    validations:
+      required: true

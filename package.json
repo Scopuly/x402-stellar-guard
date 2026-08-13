@@ -1,0 +1,86 @@
+{
+  "name": "@scopuly/x402-stellar-guard",
+  "version": "0.1.0",
+  "description": "Wallet-grade safety, policy, receipt, and conformance tooling for x402 payments on Stellar.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "author": "Scopuly <support@scopuly.com>",
+  "homepage": "https://github.com/scopuly/x402-stellar-guard#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scopuly/x402-stellar-guard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/scopuly/x402-stellar-guard/issues"
+  },
+  "keywords": [
+    "x402",
+    "stellar",
+    "soroban",
+    "wallet",
+    "payments",
+    "agentic-payments",
+    "security",
+    "conformance"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "npm@11.14.1",
+  "files": [
+    "dist",
+    "docs",
+    "README.md",
+    "LICENSE",
+    "NOTICE",
+    "SECURITY.md",
+    "CHANGELOG.md"
+  ],
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./adapters/scopuly-provider": {
+      "types": "./dist/adapters/scopuly-provider.d.ts",
+      "import": "./dist/adapters/scopuly-provider.js"
+    },
+    "./conformance": {
+      "types": "./dist/conformance/index.d.ts",
+      "import": "./dist/conformance/index.js"
+    }
+  },
+  "bin": {
+    "x402-stellar-guard": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "check": "npm run lint && npm run typecheck && npm test && npm run build",
+    "check:package": "publint && attw --pack . --profile esm-only",
+    "lint": "eslint src test examples",
+    "test": "node --import tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "release:check": "npm run check && npm run check:package",
+    "prepublishOnly": "npm run release:check"
+  },
+  "dependencies": {
+    "@stellar/stellar-sdk": "^16.1.0",
+    "buffer": "^6.0.3"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.18.5",
+    "@eslint/js": "^9.39.1",
+    "@types/node": "^24.10.1",
+    "eslint": "^9.39.1",
+    "publint": "^0.3.23",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
