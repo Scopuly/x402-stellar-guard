@@ -22,7 +22,7 @@ npm Trusted Publishing is configured per existing package, so the initial packag
 npm publish --access public --provenance=false
 ```
 
-Immediately configure Trusted Publishing before the next release. Do not add an npm automation token to GitHub.
+Run the bootstrap command only from the reviewed `v0.1.0` source. Immediately configure Trusted Publishing, then publish the matching GitHub release. The release workflow recognizes an already-published `0.1.0` as the one-time bootstrap and skips only that publish step; any later duplicate version fails closed. Do not add an npm automation token to GitHub.
 
 ## Trusted Publisher settings
 
@@ -39,4 +39,4 @@ Protect the GitHub `npm` environment with required maintainer approval. After OI
 
 ## Post-release checks
 
-Verify the npm provenance indicator, package files, README links, CLI version, and a clean install in a temporary project. Then create the matching GitHub release notes from `CHANGELOG.md`.
+Verify package files, README links, CLI version, and a clean install in a temporary project. For OIDC releases, also verify the npm provenance indicator. The manual `0.1.0` bootstrap is the documented exception and will not have provenance. Create matching GitHub release notes from `CHANGELOG.md`.
