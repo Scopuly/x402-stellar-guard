@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   npm:
-    if: github.repository == 'scopuly/x402-stellar-guard'
+    if: github.repository == 'Scopuly/x402-stellar-guard'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     environment: npm

@@ -1,6 +1,6 @@
 # @scopuly/x402-stellar-guard
 
-[![CI](https://github.com/scopuly/x402-stellar-guard/actions/workflows/ci.yml/badge.svg)](https://github.com/scopuly/x402-stellar-guard/actions/workflows/ci.yml)
+[![CI](https://github.com/Scopuly/x402-stellar-guard/actions/workflows/ci.yml/badge.svg)](https://github.com/Scopuly/x402-stellar-guard/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/npm/v/%40scopuly%2Fx402-stellar-guard)](https://www.npmjs.com/package/@scopuly/x402-stellar-guard)
 [![license](https://img.shields.io/npm/l/%40scopuly%2Fx402-stellar-guard)](LICENSE)
 

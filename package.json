@@ -5,13 +5,13 @@
   "type": "module",
   "license": "Apache-2.0",
   "author": "Scopuly <support@scopuly.com>",
-  "homepage": "https://github.com/scopuly/x402-stellar-guard#readme",
+  "homepage": "https://github.com/Scopuly/x402-stellar-guard#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/scopuly/x402-stellar-guard.git"
+    "url": "git+https://github.com/Scopuly/x402-stellar-guard.git"
   },
   "bugs": {
-    "url": "https://github.com/scopuly/x402-stellar-guard/issues"
+    "url": "https://github.com/Scopuly/x402-stellar-guard/issues"
   },
   "keywords": [
     "x402",

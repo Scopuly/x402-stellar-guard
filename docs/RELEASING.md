@@ -29,7 +29,7 @@ Immediately configure Trusted Publishing before the next release. Do not add an 
 Configure the package on npm with:
 
 - provider: GitHub Actions;
-- organization: `scopuly`;
+- organization: `Scopuly`;
 - repository: `x402-stellar-guard`;
 - workflow filename: `release.yml`;
 - environment: `npm`;

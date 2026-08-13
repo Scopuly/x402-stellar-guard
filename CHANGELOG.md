@@ -12,5 +12,5 @@ Notable changes are documented here. This project follows [Semantic Versioning](
 - Added restrictive policy composition, budgets, approval tokens, payment ledger, and receipt recovery.
 - Added Scopuly provider adapter, guard conformance, wallet conformance, and read-only CLI.
 
-[Unreleased]: https://github.com/scopuly/x402-stellar-guard/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/scopuly/x402-stellar-guard/releases/tag/v0.1.0
+[Unreleased]: https://github.com/Scopuly/x402-stellar-guard/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/Scopuly/x402-stellar-guard/releases/tag/v0.1.0
